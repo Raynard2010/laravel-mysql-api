@@ -1,0 +1,29 @@
+### Get data
+GET http://127.0.0.1:8000/api/product
+Accept: application/json
+
+### Create a new product
+POST http://127.0.0.1:8000/api/product
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nama_produk": "Ayam",
+  "harga": 10000,
+  "stok": 5
+}
+
+### Update a product
+PUT http://127.0.0.1:8000/api/product/2
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nama_produk": "Ikan",
+  "harga": 12000,
+  "stok": 7
+}
+
+### Delete a product
+DELETE http://127.0.0.1:8000/api/product/3
+Accept: application/json
